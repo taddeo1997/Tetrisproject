@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Mon Jun  8 15:12:17 2020
+Created on Mon Jun  8 21:43:31 2020
 
 @author: lucatoscano
-""" 
+"""
 
 from tkinter import *
 
