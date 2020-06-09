@@ -7,7 +7,7 @@ Created on Mon Jun  8 21:43:31 2020
 """
 
 import tkinter as tk
-from tkinter import Canvas
+
 
 #create the window
 window= tk.Tk()
@@ -19,14 +19,14 @@ window.geometry ('500x500+500+700') #width, height, coordinate x and y (pixel)
 window.title("my first window")
 
 #adding test
-text=Label(window,text="TETRIS",fg="blue",bg="green",font=("Helvetica",27)).pack()  #pack method places text in central position
+text=tk.Label(window,text="TETRIS",fg="blue",bg="green",font=("Helvetica",27)).pack()  #pack method places text in central position
 
 #function of the botton
 def button1_function():
-    button_text=Label(window,text="the button work well").pack()
+    button_text=tk.Label(window,text="the button work well").pack()
 
 #add botton
-button1=Button(window,text="unuseful",command=button1_function).pack()
+button1=tk.Button(window,text="unuseful",command=button1_function).pack()
 
 
 #start the main loop
