@@ -6,16 +6,28 @@ Created on Mon Jun  8 21:43:31 2020
 @author: lucatoscano
 """
 
-from tkinter import *
+import tkinter as tk
+from tkinter import Canvas
 
 #create the window
-window= Tk()
+window= tk.Tk()
  
 #size of window
 window.geometry ('500x500+500+700') #width, height, coordinate x and y (pixel)
 
 #title of window
 window.title("my first window")
+
+#adding test
+text=Label(window,text="TETRIS",fg="blue",bg="green",font=("Helvetica",27)).pack()  #pack method places text in central position
+
+#function of the botton
+def button1_function():
+    button_text=Label(window,text="the button work well").pack()
+
+#add botton
+button1=Button(window,text="unuseful",command=button1_function).pack()
+
 
 #start the main loop
 window.mainloop()
